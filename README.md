@@ -10,3 +10,20 @@ The NCSN++ network, which was used to learn the reverse-time transition rates, w
 #### Differential changes to the SDE code base
 - The file `util.py` and `datasets.py` was updated for our purpose 
 - The file `loadDataPipeline.py` was added (for some reason, the original integrated data pipeline could not be used on our internal computational cluster.)
+
+## Blackout Diffusion codes
+
+Training and generation (inference) are separated into two Jupyter Notebooks. The first time when a training code is executed, the forward solution of the $\beta$-decay process at observation times is solved and stored in `forwardSolution.npz`. Later on, running the same training codes would only read the stored solution.
+
+### CIFAR-10 dataset
+- `blackout-cifar10-train-by-finiteTime.ipynb`:  Training by the finite-time formulation of the loss function
+- `blackout-binarizedMNIST-train-by-instantaneous.ipynb`:  Training by the instantaneous formulation of the loss function
+- `blackout-binarizedMNIST-generate-by-binomailBridge.ipynb`:  Generation using the binomial bridge formula
+- `blackout-cifar10-generate-by-tauLeaping.ipynb`:  Generation using the $\tau$-leaping formulation
+
+### Binarized MNIST dataset
+- `blackout-binarizedMNIST-generate-by-binomailBridge.ipynb`:  Training by the instantaneous formulation of the loss function
+- `blackout-binarizedMNIST-generate-by-binomailBridge.ipyng`:  Generation by the binomial bridge formula
+
+
+-  
