@@ -23,7 +23,6 @@ Training and generation (inference) are separated into two Jupyter Notebooks. Th
 
 ### Binarized MNIST dataset
 - `blackout-binarizedMNIST-generate-by-binomailBridge.ipynb`:  Training by the instantaneous formulation of the loss function
-- `blackout-binarizedMNIST-generate-by-binomailBridge.ipyng`:  Generation by the binomial bridge formula
+- `blackout-binarizedMNIST-generate-by-binomailBridge.ipynb`:  Generation by the binomial bridge formula
 
 
--  
