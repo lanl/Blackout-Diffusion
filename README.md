@@ -22,7 +22,12 @@ Training and generation (inference) are separated into two Jupyter Notebooks. Th
 - `blackout-cifar10-generate-by-tauLeaping.ipynb`:  Generation using the $\tau$-leaping formulation
 
 ### Binarized MNIST dataset
-- `blackout-binarizedMNIST-generate-by-binomailBridge.ipynb`:  Training by the instantaneous formulation of the loss function
+- `blackout-binarizedMNIST-train-by-instantaneous.ipynb`:  Training by the instantaneous formulation of the loss function
 - `blackout-binarizedMNIST-generate-by-binomailBridge.ipynb`:  Generation by the binomial bridge formula
+
+### CelebA dataset
+- `blackout-celebA64-train-by-instantaneous.ipynb`:  Training by the instantaneous formulation of the loss function
+- `blackout-celebA64-generate-by-binomialBridge.ipynb`:  Generation by the binomial bridge formula
+
 
 
